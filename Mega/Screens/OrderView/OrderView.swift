@@ -12,25 +12,28 @@ struct OrderView: View {
     var body: some View {
         NavigationView {
             VStack {
-                List {
-                    ForEach(order.items) { appetizer in
-                        ProductListCell(product: appetizer)
-                    }
-                    .onDelete(perform: { indexSet in
-                        order.deleteItems(at: indexSet)
-                    })
-                }
-                .listStyle(.plain)
                 
-                Button {
-                    
-                } label: {
-                    AppButtonView(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
-                }
-                .padding(.bottom, 20)
                 if order.items.isEmpty {
                     EmptyState(imageName: "empty-order",
                                title: "You have no items in your order.\nPlease add an appetizer!")
+                }
+                else {
+                    List {
+                        ForEach(order.items) { appetizer in
+                            ProductListCell(product: appetizer)
+                        }
+                        .onDelete(perform: { indexSet in
+                            order.deleteItems(at: indexSet)
+                        })
+                    }
+                    .listStyle(.plain)
+                    
+                    NavigationLink(destination: PaymentView()
+                        .environmentObject(order)) {
+                            AppButtonView(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
+                        }
+                        .padding(.bottom, 20)
+                        .padding(.bottom, 20)
                 }
             }
             

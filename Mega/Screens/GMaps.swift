@@ -13,7 +13,7 @@ struct GMaps: View {
         GoogleMapView(
             latitude: 51.08942928204394,
             longitude: 71.40708259397854,
-            zoom: 13.0
+            zoom: 15.0
         )
         .edgesIgnoringSafeArea(.all)
     }

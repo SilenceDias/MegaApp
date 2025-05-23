@@ -13,7 +13,7 @@ struct AppetizersApp: App {
     
     init() {
         // Регистрируем ваш API-ключ до создания любых View
-        GMSServices.provideAPIKey("AIzaSyCQA1xuzMtnLc95UZlbS6_eMB9Sk5tvRlY")
+        GMSServices.provideAPIKey("AIzaSyAa2C7covQhlaG0-nDzHYXHEgxAimrLOec")
     }
     
     var order = OrderModel()

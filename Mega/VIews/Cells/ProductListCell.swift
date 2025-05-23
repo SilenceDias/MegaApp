@@ -36,7 +36,7 @@ struct ProductListCell: View {
                 Text(product.name)
                     .font(.title2)
                     .fontWeight(.medium)
-                Text("$ \(product.price)")
+                Text("$\(product.price, specifier: "%.2f")")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .fontWeight(.semibold)

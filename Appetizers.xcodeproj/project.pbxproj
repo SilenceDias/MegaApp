@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9728CA652DE0464D003EB7EB /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728CA642DE0464D003EB7EB /* PaymentView.swift */; };
 		E816CBFA2DD8CC1300281874 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816CBF92DD8CC1300281874 /* ShopModel.swift */; };
 		E816CBFC2DD8D03C00281874 /* AppitizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816CBFB2DD8D03C00281874 /* AppitizerListCell.swift */; };
 		E816CBFF2DD8D62600281874 /* ShopProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E816CBFE2DD8D62600281874 /* ShopProductsView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9728CA642DE0464D003EB7EB /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		E816CBF92DD8CC1300281874 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
 		E816CBFB2DD8D03C00281874 /* AppitizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppitizerListCell.swift; sourceTree = "<group>"; };
 		E816CBFE2DD8D62600281874 /* ShopProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopProductsView.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9728CA632DE0463D003EB7EB /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				9728CA642DE0464D003EB7EB /* PaymentView.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		E816CBFD2DD8D61100281874 /* ShopProduct */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		E879040B2DD4BDA600962F70 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9728CA632DE0463D003EB7EB /* Payment */,
 				E816CBFD2DD8D61100281874 /* ShopProduct */,
 				E87904112DD4BE5000962F70 /* AppetizerListView */,
 				E87904132DD4BE6C00962F70 /* AccountView */,
@@ -368,6 +379,7 @@
 				E816CC032DD8DE9800281874 /* ProductViewModel.swift in Sources */,
 				E87904092DD4B8E800962F70 /* RemoteImage.swift in Sources */,
 				E818D7FD2DD4E9AE006DA842 /* String+Ext.swift in Sources */,
+				9728CA652DE0464D003EB7EB /* PaymentView.swift in Sources */,
 				E87904032DD4B15100962F70 /* Alert.swift in Sources */,
 				E816CC0A2DD8E5B800281874 /* GMaps.swift in Sources */,
 				E818D8042DD5BBA1006DA842 /* EmptyState.swift in Sources */,
@@ -511,7 +523,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Appetizers/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Mega/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4WQM3AZUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -541,7 +553,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Appetizers/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Mega/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4WQM3AZUM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
